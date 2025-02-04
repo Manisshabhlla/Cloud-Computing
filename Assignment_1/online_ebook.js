@@ -1,5 +1,5 @@
 const express = require('express');
-const mysql = require('mysql2');
+const mysql = require('mysql');
 const bodyParser = require('body-parser');
 
 // Initialize Express
@@ -11,10 +11,10 @@ app.use(bodyParser.json());
 
 // Create MySQL connection
 const db = mysql.createConnection({
-  host: 'localhost',
-  user: 'root', // Your MySQL username
-  password: 'root@123', // Your MySQL password
-  database: 'sys',
+  host: '192.168.29.236',
+  user: 'root',
+  password: 'NewP@ssw0rd123!',
+  database: 'ebooks_db',
 });
 
 // Connect to the database
