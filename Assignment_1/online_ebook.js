@@ -4,7 +4,7 @@ const bodyParser = require('body-parser');
 
 // Initialize Express
 const app = express();
-const port = 3000;
+const port = 3001;
 
 // Middleware to parse incoming JSON data
 app.use(bodyParser.json());
